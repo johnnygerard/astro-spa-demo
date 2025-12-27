@@ -1,0 +1,39 @@
+---
+import Navigation from "~/components/Navigation.astro";
+import Layout from "~/layouts/Layout.astro";
+---
+
+<Layout>
+  <Navigation />
+  <main class="container mx-auto px-4 py-12">
+    <div class="max-w-3xl">
+      <h1 class="mb-6 text-4xl font-bold text-gray-900">About This Demo</h1>
+      <p class="mb-4 text-lg text-gray-700">
+        This demonstration showcases Astro's SPA mode, which enables client-side
+        navigation using the View Transition API. This approach combines the
+        benefits of static site generation with the smooth navigation experience
+        of a single-page application.
+      </p>
+      <div class="mb-6 rounded-lg bg-green-50 p-6">
+        <h2 class="mb-3 text-2xl font-semibold text-gray-800">How It Works:</h2>
+        <p class="mb-2 text-gray-700">
+          The <code class="rounded bg-gray-200 px-2 py-1">ClientRouter</code> component
+          from <code class="rounded bg-gray-200 px-2 py-1"
+            >astro:transitions</code
+          >
+          intercepts navigation events and performs client-side routing instead of
+          traditional full-page reloads.
+        </p>
+      </div>
+      <div class="rounded-lg bg-purple-50 p-6">
+        <h2 class="mb-3 text-2xl font-semibold text-gray-800">Benefits:</h2>
+        <ul class="list-inside list-disc space-y-2 text-gray-700">
+          <li>Faster navigation between pages</li>
+          <li>Preserved JavaScript state during navigation</li>
+          <li>Smooth visual transitions</li>
+          <li>Better user experience</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</Layout>
