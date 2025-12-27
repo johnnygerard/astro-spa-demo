@@ -1,8 +1,29 @@
 ---
-import Main from "~/components/Main.astro";
+import Navigation from "~/components/Navigation.astro";
 import Layout from "~/layouts/Layout.astro";
 ---
 
 <Layout>
-  <Main />
+  <Navigation />
+  <main class="container mx-auto px-4 py-12">
+    <div class="max-w-3xl">
+      <h1 class="mb-6 text-4xl font-bold text-gray-900">
+        Welcome to Astro SPA Demo!
+      </h1>
+      <p class="mb-4 text-lg text-gray-700">
+        This is a demonstration of Astro's SPA (Single Page Application) mode
+        using the View Transition API. Navigate between pages to experience
+        smooth client-side transitions without full page reloads.
+      </p>
+      <div class="rounded-lg bg-blue-50 p-6">
+        <h2 class="mb-3 text-2xl font-semibold text-gray-800">Key Features:</h2>
+        <ul class="list-inside list-disc space-y-2 text-gray-700">
+          <li>Client-side navigation with the ClientRouter component</li>
+          <li>Smooth page transitions using the View Transition API</li>
+          <li>No full page reloads between navigation</li>
+          <li>Improved user experience with instant navigation</li>
+        </ul>
+      </div>
+    </div>
+  </main>
 </Layout>

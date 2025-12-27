@@ -1,0 +1,41 @@
+---
+import Navigation from "~/components/Navigation.astro";
+import Layout from "~/layouts/Layout.astro";
+---
+
+<Layout>
+  <Navigation />
+  <main class="container mx-auto px-4 py-12">
+    <div class="max-w-3xl">
+      <h1 class="mb-6 text-4xl font-bold text-gray-900">Contact</h1>
+      <p class="mb-4 text-lg text-gray-700">
+        Notice how navigating to this page didn't require a full page reload?
+        That's the power of Astro's SPA mode in action!
+      </p>
+      <div class="rounded-lg bg-yellow-50 p-6">
+        <h2 class="mb-3 text-2xl font-semibold text-gray-800">Try It Out:</h2>
+        <p class="mb-4 text-gray-700">
+          Click on the navigation links above to move between pages. You'll
+          notice:
+        </p>
+        <ul class="list-inside list-disc space-y-2 text-gray-700">
+          <li>Instant page transitions</li>
+          <li>No white flash during navigation</li>
+          <li>The navigation bar doesn't reload</li>
+          <li>Smooth, app-like experience</li>
+        </ul>
+      </div>
+      <div class="mt-6 rounded-lg bg-gray-100 p-6">
+        <h3 class="mb-2 text-xl font-semibold text-gray-800">
+          Implementation:
+        </h3>
+        <p class="mb-2 text-gray-700">
+          All pages in this demo include the <code
+            class="rounded bg-gray-200 px-2 py-1">ClientRouter</code
+          > component in the layout, enabling SPA-style navigation throughout the
+          site.
+        </p>
+      </div>
+    </div>
+  </main>
+</Layout>
