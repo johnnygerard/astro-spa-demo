@@ -3,7 +3,7 @@
 This repository demonstrates Astro's SPA (Single Page Application) mode using the View Transition API. It showcases how to implement client-side navigation with the `ClientRouter` component for smooth, app-like page transitions without full page reloads.
 
 ![project status](https://img.shields.io/badge/status-work_in_progress-red?style=for-the-badge)
-![live site](https://img.shields.io/badge/live_site-blue?style=for-the-badge)
+[![live site](https://img.shields.io/badge/live_site-blue?style=for-the-badge)](https://astro-spa-demo.mail-25a.workers.dev/)
 ![Lighthouse report](https://img.shields.io/badge/lighthouse-F44B21?style=for-the-badge&logo=lighthouse&logoColor=fff)
 
 ## Features
@@ -11,7 +11,7 @@ This repository demonstrates Astro's SPA (Single Page Application) mode using th
 - **Client-side navigation** with the `ClientRouter` component from `astro:transitions`
 - **Smooth page transitions** using the View Transition API
 - **No full page reloads** between navigation
-- **Automatic prefetching** for instant page loads
+- **Automatic prefetching** for instant page loads (enabled by default when hovering or focusing a link with `ClientRouter`)
 - **Preserved JavaScript state** during navigation
 
 ## Implementation
